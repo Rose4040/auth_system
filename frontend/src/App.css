@@ -1,0 +1,55 @@
+/* Remove scroll for the whole page */
+body {
+  margin: 0;
+  overflow-x: hidden; /* horizontal scroll hidden */
+}
+
+/* Banner container */
+.banner {
+  position: relative;       /* allows heading to overlay image */
+  width: 100%;
+  height: 60vh;       /* full viewport height */
+  overflow: hidden;         /* prevents scroll inside banner */
+}
+
+/* Banner image */
+.banner img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;        /* scales image nicely without distortion */
+  display: block;
+}
+
+/* Heading overlay */
+.banner h2 {
+  position: absolute;
+  top: 50%;    /* vertically center */
+  left: 50%;                /* horizontally center */
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 4rem;          /* adjust size as needed */
+  text-shadow: 2px 2px 6px rgba(0,0,0,0.7); /* makes text readable */
+  margin: 0;
+}
+button{
+  background-color: orange;
+  border:none;
+  padding: 15px;
+  font-size: large;
+  margin: 15px;
+  border-radius: 10px;
+  width: 200px;
+  color: white;
+  font-weight: bold;
+  height:10vh;
+}
+button:hover{
+background-color: rgb(237, 195, 117);
+
+}
+.button{
+  display:flex;
+  justify-content: center;
+  background:linear-gradient(170deg,black ,rgb(115, 2, 115));
+  height:40vh;
+}
