@@ -18,7 +18,7 @@ function App() {
 
             <div className="button">
               <button onClick={() => navigate("/signup")}>
-                Sign-in
+                Sign-up
               </button>
               <button onClick={()=> navigate("/login")}>Login</button>
             </div>
